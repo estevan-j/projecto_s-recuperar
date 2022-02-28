@@ -54,7 +54,7 @@
             // cmbDestinos
             // 
             this.cmbDestinos.FormattingEnabled = true;
-            this.cmbDestinos.Location = new System.Drawing.Point(132, 192);
+            this.cmbDestinos.Location = new System.Drawing.Point(111, 171);
             this.cmbDestinos.Name = "cmbDestinos";
             this.cmbDestinos.Size = new System.Drawing.Size(121, 21);
             this.cmbDestinos.TabIndex = 0;
@@ -62,7 +62,7 @@
             // lblDestino
             // 
             this.lblDestino.AutoSize = true;
-            this.lblDestino.Location = new System.Drawing.Point(46, 198);
+            this.lblDestino.Location = new System.Drawing.Point(46, 171);
             this.lblDestino.Name = "lblDestino";
             this.lblDestino.Size = new System.Drawing.Size(51, 13);
             this.lblDestino.TabIndex = 1;
@@ -71,7 +71,7 @@
             // lblmaleta
             // 
             this.lblmaleta.AutoSize = true;
-            this.lblmaleta.Location = new System.Drawing.Point(363, 198);
+            this.lblmaleta.Location = new System.Drawing.Point(350, 179);
             this.lblmaleta.Name = "lblmaleta";
             this.lblmaleta.Size = new System.Drawing.Size(44, 13);
             this.lblmaleta.TabIndex = 2;
@@ -80,7 +80,7 @@
             // rbtNo
             // 
             this.rbtNo.AutoSize = true;
-            this.rbtNo.Location = new System.Drawing.Point(513, 196);
+            this.rbtNo.Location = new System.Drawing.Point(497, 179);
             this.rbtNo.Name = "rbtNo";
             this.rbtNo.Size = new System.Drawing.Size(39, 17);
             this.rbtNo.TabIndex = 4;
@@ -91,7 +91,7 @@
             // rbtSi
             // 
             this.rbtSi.AutoSize = true;
-            this.rbtSi.Location = new System.Drawing.Point(460, 196);
+            this.rbtSi.Location = new System.Drawing.Point(436, 177);
             this.rbtSi.Name = "rbtSi";
             this.rbtSi.Size = new System.Drawing.Size(34, 17);
             this.rbtSi.TabIndex = 5;
@@ -103,7 +103,7 @@
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(336, 235);
+            this.lblCantidad.Location = new System.Drawing.Point(316, 226);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(101, 13);
             this.lblCantidad.TabIndex = 6;
@@ -112,7 +112,7 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(452, 232);
+            this.txtCantidad.Location = new System.Drawing.Point(436, 223);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 7;
@@ -120,7 +120,7 @@
             // 
             // btnComprar
             // 
-            this.btnComprar.Location = new System.Drawing.Point(271, 272);
+            this.btnComprar.Location = new System.Drawing.Point(257, 261);
             this.btnComprar.Name = "btnComprar";
             this.btnComprar.Size = new System.Drawing.Size(75, 23);
             this.btnComprar.TabIndex = 9;
@@ -162,7 +162,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 235);
+            this.label1.Location = new System.Drawing.Point(46, 222);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 12;
@@ -170,7 +170,7 @@
             // 
             // txtBoletos
             // 
-            this.txtBoletos.Location = new System.Drawing.Point(132, 232);
+            this.txtBoletos.Location = new System.Drawing.Point(111, 219);
             this.txtBoletos.Name = "txtBoletos";
             this.txtBoletos.Size = new System.Drawing.Size(100, 20);
             this.txtBoletos.TabIndex = 13;
@@ -191,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 327);
+            this.ClientSize = new System.Drawing.Size(584, 311);
             this.Controls.Add(this.txtBoletos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstLugares);

@@ -64,7 +64,7 @@
             // 
             this.lblApellido.AutoSize = true;
             this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.Location = new System.Drawing.Point(111, 166);
+            this.lblApellido.Location = new System.Drawing.Point(134, 162);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(65, 16);
             this.lblApellido.TabIndex = 8;
@@ -74,7 +74,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(111, 117);
+            this.lblNombre.Location = new System.Drawing.Point(134, 120);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(62, 16);
             this.lblNombre.TabIndex = 9;
@@ -89,7 +89,7 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(221, 166);
+            this.txtApellido.Location = new System.Drawing.Point(295, 162);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(100, 20);
             this.txtApellido.TabIndex = 15;
@@ -106,7 +106,7 @@
             // 
             // btnContinuar
             // 
-            this.btnContinuar.Location = new System.Drawing.Point(205, 262);
+            this.btnContinuar.Location = new System.Drawing.Point(268, 243);
             this.btnContinuar.Name = "btnContinuar";
             this.btnContinuar.Size = new System.Drawing.Size(95, 43);
             this.btnContinuar.TabIndex = 26;
@@ -121,7 +121,7 @@
             // lblCi
             // 
             this.lblCi.AutoSize = true;
-            this.lblCi.Location = new System.Drawing.Point(156, 212);
+            this.lblCi.Location = new System.Drawing.Point(158, 205);
             this.lblCi.Name = "lblCi";
             this.lblCi.Size = new System.Drawing.Size(17, 13);
             this.lblCi.TabIndex = 30;
@@ -129,14 +129,14 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(221, 116);
+            this.txtNombre.Location = new System.Drawing.Point(295, 116);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 31;
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(221, 212);
+            this.txtCedula.Location = new System.Drawing.Point(295, 205);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(100, 20);
             this.txtCedula.TabIndex = 32;
@@ -147,7 +147,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(470, 341);
+            this.ClientSize = new System.Drawing.Size(584, 311);
             this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblCi);

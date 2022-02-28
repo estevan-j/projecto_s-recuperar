@@ -69,6 +69,7 @@ namespace projecto_s
                 btnContinuar.Enabled = false;
                 lblApellido.Focus();
             }
+           
         }
 
      
@@ -93,6 +94,7 @@ namespace projecto_s
             borrarDatos();
             Form eleccion = new Form2();
             eleccion.Show();
+            this.Close();
         }
 
        
