@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.cmbDestinos = new System.Windows.Forms.ComboBox();
             this.lblDestino = new System.Windows.Forms.Label();
             this.lblmaleta = new System.Windows.Forms.Label();
@@ -46,15 +47,19 @@
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbDestinos
             // 
             this.cmbDestinos.FormattingEnabled = true;
-            this.cmbDestinos.Location = new System.Drawing.Point(120, 171);
+            this.cmbDestinos.Location = new System.Drawing.Point(120, 189);
             this.cmbDestinos.Name = "cmbDestinos";
             this.cmbDestinos.Size = new System.Drawing.Size(100, 21);
             this.cmbDestinos.TabIndex = 0;
@@ -62,7 +67,7 @@
             // lblDestino
             // 
             this.lblDestino.AutoSize = true;
-            this.lblDestino.Location = new System.Drawing.Point(46, 171);
+            this.lblDestino.Location = new System.Drawing.Point(46, 189);
             this.lblDestino.Name = "lblDestino";
             this.lblDestino.Size = new System.Drawing.Size(51, 13);
             this.lblDestino.TabIndex = 1;
@@ -71,7 +76,7 @@
             // lblmaleta
             // 
             this.lblmaleta.AutoSize = true;
-            this.lblmaleta.Location = new System.Drawing.Point(326, 174);
+            this.lblmaleta.Location = new System.Drawing.Point(326, 189);
             this.lblmaleta.Name = "lblmaleta";
             this.lblmaleta.Size = new System.Drawing.Size(44, 13);
             this.lblmaleta.TabIndex = 2;
@@ -80,7 +85,7 @@
             // rbtNo
             // 
             this.rbtNo.AutoSize = true;
-            this.rbtNo.Location = new System.Drawing.Point(497, 172);
+            this.rbtNo.Location = new System.Drawing.Point(497, 185);
             this.rbtNo.Name = "rbtNo";
             this.rbtNo.Size = new System.Drawing.Size(39, 17);
             this.rbtNo.TabIndex = 4;
@@ -91,7 +96,7 @@
             // rbtSi
             // 
             this.rbtSi.AutoSize = true;
-            this.rbtSi.Location = new System.Drawing.Point(436, 172);
+            this.rbtSi.Location = new System.Drawing.Point(436, 185);
             this.rbtSi.Name = "rbtSi";
             this.rbtSi.Size = new System.Drawing.Size(34, 17);
             this.rbtSi.TabIndex = 5;
@@ -103,7 +108,7 @@
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(326, 227);
+            this.lblCantidad.Location = new System.Drawing.Point(326, 234);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(59, 13);
             this.lblCantidad.TabIndex = 6;
@@ -112,15 +117,16 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(436, 220);
+            this.txtCantidad.Location = new System.Drawing.Point(436, 234);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 7;
             this.txtCantidad.Visible = false;
+            this.txtCantidad.TextChanged += new System.EventHandler(this.txtCantidad_TextChanged);
             // 
             // btnComprar
             // 
-            this.btnComprar.Location = new System.Drawing.Point(257, 261);
+            this.btnComprar.Location = new System.Drawing.Point(259, 267);
             this.btnComprar.Name = "btnComprar";
             this.btnComprar.Size = new System.Drawing.Size(75, 23);
             this.btnComprar.TabIndex = 9;
@@ -144,7 +150,7 @@
             this.lstLugares.HideSelection = false;
             this.lstLugares.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lstLugares.LabelWrap = false;
-            this.lstLugares.Location = new System.Drawing.Point(108, 12);
+            this.lstLugares.Location = new System.Drawing.Point(109, 25);
             this.lstLugares.MultiSelect = false;
             this.lstLugares.Name = "lstLugares";
             this.lstLugares.Size = new System.Drawing.Size(385, 115);
@@ -172,7 +178,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 222);
+            this.label1.Location = new System.Drawing.Point(46, 230);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 12;
@@ -181,7 +187,7 @@
             // txtBoletos
             // 
             this.txtBoletos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoletos.Location = new System.Drawing.Point(120, 220);
+            this.txtBoletos.Location = new System.Drawing.Point(120, 230);
             this.txtBoletos.Name = "txtBoletos";
             this.txtBoletos.Size = new System.Drawing.Size(100, 20);
             this.txtBoletos.TabIndex = 13;
@@ -199,13 +205,47 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::projecto_s.Properties.Resources.bus_PNG8610;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(97, 89);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(109, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 16);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Destinos y Presios";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(46, 160);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(164, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Seleccione todos los datos:";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(584, 311);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtBoletos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstLugares);
@@ -218,12 +258,15 @@
             this.Controls.Add(this.lblDestino);
             this.Controls.Add(this.cmbDestinos);
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
-            this.Text = "euaf";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "TRANS JEC - BOLETERÍA";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,6 +291,9 @@
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
 

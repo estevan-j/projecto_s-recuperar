@@ -172,7 +172,16 @@ namespace projecto_s
                     break;
             }
         }
-      
+
+        private void txtCantidad_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
        

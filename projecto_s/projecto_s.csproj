@@ -33,6 +33,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -101,6 +108,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bus_PNG8610.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bustransport_bus_4984.ico" />
+    <None Include="Resources\WhatsApp Image 2022-02-28 at 16.17.19.jpeg" />
+    <None Include="Resources\WhatsApp Image 2022-02-28 at 15.05.42.jpeg" />
+    <None Include="Resources\kisspng-road-clip-art-5af84ee0b4c9b6.5735287115262225607405.jpg" />
+    <None Include="Resources\20180118054924_ecuador-licitara-170-kila-metros-de.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
