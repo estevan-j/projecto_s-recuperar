@@ -36,6 +36,7 @@ namespace projecto_s
         public Form2()
         {
             InitializeComponent();
+            cmbDestinos.DropDownStyle = ComboBoxStyle.DropDownList;
             lugares[0].lugarDeDestino = "Guayaquil";
             lugares[0].precio = 9;
             lugares[0].horario = "13:00";

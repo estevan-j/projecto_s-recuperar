@@ -54,15 +54,15 @@
             // cmbDestinos
             // 
             this.cmbDestinos.FormattingEnabled = true;
-            this.cmbDestinos.Location = new System.Drawing.Point(132, 192);
+            this.cmbDestinos.Location = new System.Drawing.Point(120, 171);
             this.cmbDestinos.Name = "cmbDestinos";
-            this.cmbDestinos.Size = new System.Drawing.Size(121, 21);
+            this.cmbDestinos.Size = new System.Drawing.Size(100, 21);
             this.cmbDestinos.TabIndex = 0;
             // 
             // lblDestino
             // 
             this.lblDestino.AutoSize = true;
-            this.lblDestino.Location = new System.Drawing.Point(46, 198);
+            this.lblDestino.Location = new System.Drawing.Point(46, 171);
             this.lblDestino.Name = "lblDestino";
             this.lblDestino.Size = new System.Drawing.Size(51, 13);
             this.lblDestino.TabIndex = 1;
@@ -71,7 +71,7 @@
             // lblmaleta
             // 
             this.lblmaleta.AutoSize = true;
-            this.lblmaleta.Location = new System.Drawing.Point(363, 198);
+            this.lblmaleta.Location = new System.Drawing.Point(326, 174);
             this.lblmaleta.Name = "lblmaleta";
             this.lblmaleta.Size = new System.Drawing.Size(44, 13);
             this.lblmaleta.TabIndex = 2;
@@ -80,7 +80,7 @@
             // rbtNo
             // 
             this.rbtNo.AutoSize = true;
-            this.rbtNo.Location = new System.Drawing.Point(513, 196);
+            this.rbtNo.Location = new System.Drawing.Point(497, 172);
             this.rbtNo.Name = "rbtNo";
             this.rbtNo.Size = new System.Drawing.Size(39, 17);
             this.rbtNo.TabIndex = 4;
@@ -91,7 +91,7 @@
             // rbtSi
             // 
             this.rbtSi.AutoSize = true;
-            this.rbtSi.Location = new System.Drawing.Point(460, 196);
+            this.rbtSi.Location = new System.Drawing.Point(436, 172);
             this.rbtSi.Name = "rbtSi";
             this.rbtSi.Size = new System.Drawing.Size(34, 17);
             this.rbtSi.TabIndex = 5;
@@ -103,16 +103,16 @@
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(336, 235);
+            this.lblCantidad.Location = new System.Drawing.Point(326, 227);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(101, 13);
+            this.lblCantidad.Size = new System.Drawing.Size(59, 13);
             this.lblCantidad.TabIndex = 6;
-            this.lblCantidad.Text = "Numero De Maletas";
+            this.lblCantidad.Text = "Nº Maletas";
             this.lblCantidad.Visible = false;
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(452, 232);
+            this.txtCantidad.Location = new System.Drawing.Point(436, 220);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 7;
@@ -120,7 +120,7 @@
             // 
             // btnComprar
             // 
-            this.btnComprar.Location = new System.Drawing.Point(271, 272);
+            this.btnComprar.Location = new System.Drawing.Point(257, 261);
             this.btnComprar.Name = "btnComprar";
             this.btnComprar.Size = new System.Drawing.Size(75, 23);
             this.btnComprar.TabIndex = 9;
@@ -130,14 +130,24 @@
             // 
             // lstLugares
             // 
+            this.lstLugares.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.lstLugares.Alignment = System.Windows.Forms.ListViewAlignment.Default;
+            this.lstLugares.AllowColumnReorder = true;
+            this.lstLugares.BackColor = System.Drawing.Color.White;
             this.lstLugares.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.opciones,
             this.Precio,
             this.Horario});
+            this.lstLugares.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lstLugares.ForeColor = System.Drawing.Color.Black;
+            this.lstLugares.GridLines = true;
             this.lstLugares.HideSelection = false;
+            this.lstLugares.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lstLugares.LabelWrap = false;
             this.lstLugares.Location = new System.Drawing.Point(108, 12);
+            this.lstLugares.MultiSelect = false;
             this.lstLugares.Name = "lstLugares";
-            this.lstLugares.Size = new System.Drawing.Size(386, 124);
+            this.lstLugares.Size = new System.Drawing.Size(385, 115);
             this.lstLugares.TabIndex = 11;
             this.lstLugares.UseCompatibleStateImageBehavior = false;
             this.lstLugares.View = System.Windows.Forms.View.Details;
@@ -162,7 +172,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 235);
+            this.label1.Location = new System.Drawing.Point(46, 222);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 12;
@@ -170,10 +180,12 @@
             // 
             // txtBoletos
             // 
-            this.txtBoletos.Location = new System.Drawing.Point(132, 232);
+            this.txtBoletos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoletos.Location = new System.Drawing.Point(120, 220);
             this.txtBoletos.Name = "txtBoletos";
             this.txtBoletos.Size = new System.Drawing.Size(100, 20);
             this.txtBoletos.TabIndex = 13;
+            this.txtBoletos.TabStop = false;
             // 
             // errorProvider2
             // 
@@ -191,7 +203,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 327);
+            this.AutoScroll = true;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(584, 311);
             this.Controls.Add(this.txtBoletos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstLugares);
@@ -204,6 +218,7 @@
             this.Controls.Add(this.lblDestino);
             this.Controls.Add(this.cmbDestinos);
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form2";
             this.Text = "euaf";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();

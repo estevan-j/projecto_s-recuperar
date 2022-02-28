@@ -91,6 +91,7 @@ namespace projecto_s
                 btnContinuar.Enabled = false;
                 txtCedula.Focus();
             }
+           
         }
 
 
@@ -114,6 +115,7 @@ namespace projecto_s
             borrarDatos();
             Form eleccion = new Form2();
             eleccion.Show();
+            this.Close();
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
