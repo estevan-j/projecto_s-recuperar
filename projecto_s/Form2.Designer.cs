@@ -54,9 +54,9 @@
             // cmbDestinos
             // 
             this.cmbDestinos.FormattingEnabled = true;
-            this.cmbDestinos.Location = new System.Drawing.Point(111, 171);
+            this.cmbDestinos.Location = new System.Drawing.Point(120, 171);
             this.cmbDestinos.Name = "cmbDestinos";
-            this.cmbDestinos.Size = new System.Drawing.Size(121, 21);
+            this.cmbDestinos.Size = new System.Drawing.Size(100, 21);
             this.cmbDestinos.TabIndex = 0;
             // 
             // lblDestino
@@ -71,7 +71,7 @@
             // lblmaleta
             // 
             this.lblmaleta.AutoSize = true;
-            this.lblmaleta.Location = new System.Drawing.Point(350, 179);
+            this.lblmaleta.Location = new System.Drawing.Point(326, 174);
             this.lblmaleta.Name = "lblmaleta";
             this.lblmaleta.Size = new System.Drawing.Size(44, 13);
             this.lblmaleta.TabIndex = 2;
@@ -80,7 +80,7 @@
             // rbtNo
             // 
             this.rbtNo.AutoSize = true;
-            this.rbtNo.Location = new System.Drawing.Point(497, 179);
+            this.rbtNo.Location = new System.Drawing.Point(497, 172);
             this.rbtNo.Name = "rbtNo";
             this.rbtNo.Size = new System.Drawing.Size(39, 17);
             this.rbtNo.TabIndex = 4;
@@ -91,7 +91,7 @@
             // rbtSi
             // 
             this.rbtSi.AutoSize = true;
-            this.rbtSi.Location = new System.Drawing.Point(436, 177);
+            this.rbtSi.Location = new System.Drawing.Point(436, 172);
             this.rbtSi.Name = "rbtSi";
             this.rbtSi.Size = new System.Drawing.Size(34, 17);
             this.rbtSi.TabIndex = 5;
@@ -103,16 +103,16 @@
             // lblCantidad
             // 
             this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(316, 226);
+            this.lblCantidad.Location = new System.Drawing.Point(326, 227);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(101, 13);
+            this.lblCantidad.Size = new System.Drawing.Size(59, 13);
             this.lblCantidad.TabIndex = 6;
-            this.lblCantidad.Text = "Numero De Maletas";
+            this.lblCantidad.Text = "Nº Maletas";
             this.lblCantidad.Visible = false;
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(436, 223);
+            this.txtCantidad.Location = new System.Drawing.Point(436, 220);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 7;
@@ -180,10 +180,12 @@
             // 
             // txtBoletos
             // 
-            this.txtBoletos.Location = new System.Drawing.Point(111, 219);
+            this.txtBoletos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoletos.Location = new System.Drawing.Point(120, 220);
             this.txtBoletos.Name = "txtBoletos";
             this.txtBoletos.Size = new System.Drawing.Size(100, 20);
             this.txtBoletos.TabIndex = 13;
+            this.txtBoletos.TabStop = false;
             // 
             // errorProvider2
             // 
