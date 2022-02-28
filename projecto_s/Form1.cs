@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace projecto_s
 {
    
-    public partial class Form1 : Form
+    public partial class Form1 : Form 
     {
         public Form1()
         {
@@ -91,6 +91,8 @@ namespace projecto_s
             controlNombre();
             controlApellido();
             borrarDatos();
+            Form eleccion = new Form2();
+            eleccion.Show();
         }
 
        
