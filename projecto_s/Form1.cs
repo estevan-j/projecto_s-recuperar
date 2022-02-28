@@ -28,51 +28,73 @@ namespace projecto_s
 
         private void controlNombre()
         {
-            if (lblNombre.Text.Trim() != string.Empty && lblNombre.Text.All(char.IsLetter))
+            if (txtNombre.Text.Trim() != string.Empty && txtNombre.Text.All(char.IsLetter))
             {
                 btnContinuar.Enabled = true;
-                errorProvider1.SetError(lblNombre, "");
+                errorProvider1.SetError(txtNombre, "");
             }
             else
             {
-                if (!(lblNombre.Text.All(Char.IsLetter)))
+                if (!(txtNombre.Text.All(Char.IsLetter)))
                 {
-                    errorProvider1.SetError(lblNombre, "El nombre debe contener letras");
+                    errorProvider1.SetError(txtNombre, "El nombre debe contener letras");
                 }
                 else
                 {
-                    errorProvider1.SetError(lblNombre, "Debe introducir su nombre");
+                    errorProvider1.SetError(txtNombre, "Debe introducir su nombre");
 
                 }
                 btnContinuar.Enabled = false;
-                lblNombre.Focus();
+                txtNombre.Focus();
             }
         }
         private void controlApellido()
         {
-            if (lblApellido.Text.Trim() != string.Empty && lblApellido.Text.All(char.IsLetter))
+            if (txtApellido.Text.Trim() != string.Empty && txtApellido.Text.All(char.IsLetter))
             {
                 btnContinuar.Enabled = true;
-                errorProvider1.SetError(lblApellido, "");
+                errorProvider1.SetError(txtApellido, "");
             }
             else
             {
-                if (!(lblApellido.Text.All(Char.IsLetter)))
+                if (!(txtApellido.Text.All(Char.IsLetter)))
                 {
-                    errorProvider1.SetError(lblApellido, "El nombre debe contener letras");
+                    errorProvider1.SetError(txtApellido, "El nombre debe contener letras");
                 }
                 else
                 {
-                    errorProvider1.SetError(lblApellido, "Debe introducir su nombre");
+                    errorProvider1.SetError(txtApellido, "Debe introducir su nombre");
 
                 }
                 btnContinuar.Enabled = false;
-                lblApellido.Focus();
+                txtApellido.Focus();
+            }
+        }
+        private void controlCedula()
+        {
+            if (txtCedula.Text.Trim() != string.Empty && txtCedula.Text.All(char.IsNumber))
+            {
+                btnContinuar.Enabled = true;
+                errorProvider1.SetError(txtCedula, "");
+            }
+            else
+            {
+                if (!(txtCedula.Text.All(Char.IsNumber)))
+                {
+                    errorProvider1.SetError(txtCedula, "El nombre debe contener letras");
+                }
+                else
+                {
+                    errorProvider1.SetError(txtCedula, "Debe introducir su nombre");
+
+                }
+                btnContinuar.Enabled = false;
+                txtCedula.Focus();
             }
            
         }
 
-     
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -89,14 +111,28 @@ namespace projecto_s
 
         private void btnContinuar_Click(object sender, EventArgs e)
         {
-            controlNombre();
-            controlApellido();
+            
             borrarDatos();
             Form eleccion = new Form2();
             eleccion.Show();
             this.Close();
         }
 
-       
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            controlNombre();
+            
+        }
+
+        private void txtApellido_TextChanged(object sender, EventArgs e)
+        {
+            controlApellido();
+        }
+
+        private void txtCedula_TextChanged(object sender, EventArgs e)
+        {
+            controlCedula();
+            
+        }
     }
 }

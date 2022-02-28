@@ -66,7 +66,7 @@
             this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.Location = new System.Drawing.Point(134, 162);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(65, 16);
+            this.lblApellido.Size = new System.Drawing.Size(66, 16);
             this.lblApellido.TabIndex = 8;
             this.lblApellido.Text = "Apellido";
             // 
@@ -76,7 +76,7 @@
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(134, 120);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(62, 16);
+            this.lblNombre.Size = new System.Drawing.Size(63, 16);
             this.lblNombre.TabIndex = 9;
             this.lblNombre.Text = "Nombre";
             // 
@@ -93,6 +93,7 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(100, 20);
             this.txtApellido.TabIndex = 15;
+            this.txtApellido.TextChanged += new System.EventHandler(this.txtApellido_TextChanged);
             // 
             // pictureBox1
             // 
@@ -108,7 +109,7 @@
             // 
             this.btnContinuar.Location = new System.Drawing.Point(268, 243);
             this.btnContinuar.Name = "btnContinuar";
-            this.btnContinuar.Size = new System.Drawing.Size(95, 43);
+            this.btnContinuar.Size = new System.Drawing.Size(116, 43);
             this.btnContinuar.TabIndex = 26;
             this.btnContinuar.Text = "Continuar";
             this.btnContinuar.UseVisualStyleBackColor = true;
@@ -121,9 +122,14 @@
             // lblCi
             // 
             this.lblCi.AutoSize = true;
+
             this.lblCi.Location = new System.Drawing.Point(158, 205);
+
+            this.lblCi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCi.Location = new System.Drawing.Point(156, 212);
+
             this.lblCi.Name = "lblCi";
-            this.lblCi.Size = new System.Drawing.Size(17, 13);
+            this.lblCi.Size = new System.Drawing.Size(22, 16);
             this.lblCi.TabIndex = 30;
             this.lblCi.Text = "CI";
             // 
@@ -133,6 +139,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 31;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtCedula
             // 
@@ -140,6 +147,7 @@
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(100, 20);
             this.txtCedula.TabIndex = 32;
+            this.txtCedula.TextChanged += new System.EventHandler(this.txtCedula_TextChanged);
             // 
             // Form1
             // 
