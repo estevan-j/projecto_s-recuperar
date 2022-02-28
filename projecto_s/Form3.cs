@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp2
+namespace projecto_s
 {
     public partial class Form3 : Form
     {
@@ -17,6 +17,9 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-        
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

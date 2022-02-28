@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class form3
+    partial class Form3
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -33,21 +33,20 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(369, 243);
+            this.button1.Location = new System.Drawing.Point(288, 267);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            
             // 
-            // Form1
+            // form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 314);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "form3";
             this.Text = "Form1";
             this.ResumeLayout(false);
 

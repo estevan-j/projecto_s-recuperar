@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace projecto_s
 {
-    public partial class Form2 : Form
+    public partial class Form2 : Form 
     {
         struct Destino
         {
@@ -91,7 +91,8 @@ namespace WindowsFormsApp1
                     validarMaletas();
                     calcularSubtotal(compra.asientos,maleta.numeroMaletas);
                     limpiarDatos();
-                 
+                    Form factura = new Form3();
+                    factura.Show();
                 }
                 catch (FormatException)
                 {
