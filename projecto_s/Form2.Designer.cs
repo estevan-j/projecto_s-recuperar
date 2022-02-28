@@ -130,14 +130,24 @@
             // 
             // lstLugares
             // 
+            this.lstLugares.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.lstLugares.Alignment = System.Windows.Forms.ListViewAlignment.Default;
+            this.lstLugares.AllowColumnReorder = true;
+            this.lstLugares.BackColor = System.Drawing.Color.White;
             this.lstLugares.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.opciones,
             this.Precio,
             this.Horario});
+            this.lstLugares.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lstLugares.ForeColor = System.Drawing.Color.Black;
+            this.lstLugares.GridLines = true;
             this.lstLugares.HideSelection = false;
+            this.lstLugares.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lstLugares.LabelWrap = false;
             this.lstLugares.Location = new System.Drawing.Point(108, 12);
+            this.lstLugares.MultiSelect = false;
             this.lstLugares.Name = "lstLugares";
-            this.lstLugares.Size = new System.Drawing.Size(386, 124);
+            this.lstLugares.Size = new System.Drawing.Size(385, 115);
             this.lstLugares.TabIndex = 11;
             this.lstLugares.UseCompatibleStateImageBehavior = false;
             this.lstLugares.View = System.Windows.Forms.View.Details;
@@ -191,6 +201,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(584, 311);
             this.Controls.Add(this.txtBoletos);
             this.Controls.Add(this.label1);
@@ -204,6 +216,7 @@
             this.Controls.Add(this.lblDestino);
             this.Controls.Add(this.cmbDestinos);
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form2";
             this.Text = "euaf";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
