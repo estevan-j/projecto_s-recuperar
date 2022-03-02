@@ -22,8 +22,8 @@ namespace projecto_s
         
         private void Form3_Load(object sender, EventArgs e)
         {
-            lblNom.Text= DATOS.nombre;
-            lBLAPELL.Text = DATOS.Persona.apellido;
+            
+            
             
         }
     }
