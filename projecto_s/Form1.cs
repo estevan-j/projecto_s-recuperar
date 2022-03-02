@@ -17,14 +17,7 @@ namespace projecto_s
         {
             InitializeComponent();
         }
-        struct Persona
-        {
-            string nombre;
-            string apellido;
-            string ci;
-        }
-
-        Persona cliente;
+        
 
         private void controlNombre()
         {
@@ -111,12 +104,24 @@ namespace projecto_s
 
         private void btnContinuar_Click(object sender, EventArgs e)
         {
+            if ((txtNombre.Text == null) || (txtCedula.Text == null) || txtApellido.Text == null)
+            {
+                
+            }
+            else
+            {
+                controlNombre();
+                Datos.Persona.nombre = txtNombre.Text;
+                controlApellido();
+                Datos.Persona.apellido = txtApellido.Text;
+                controlCedula();
+                Datos.Persona.cedula = txtCedula.Text;
+                borrarDatos();
+                Form eleccion = new Form2();
+                eleccion.Show();
+                this.Close();
+            }
             
-            borrarDatos();
-            Form eleccion = new Form2();
-            
-            eleccion.Show();
-            this.Close();
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)

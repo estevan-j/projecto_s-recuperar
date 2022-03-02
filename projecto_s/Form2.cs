@@ -18,20 +18,7 @@ namespace projecto_s
             public double precio;
             public string horario;
         }
-        struct Equipaje
-        {
-            public int numeroMaletas;
-            public double valorTotal;
-        }
-        struct Boleto
-        {
-            public int asientos;
-            public double valor;
-            public double totalPagar;
-            public string destino;
-        }
-        Equipaje maleta;
-        Boleto compra;
+
         Destino[] lugares = new Destino[5];
         public Form2()
         {
@@ -81,19 +68,19 @@ namespace projecto_s
         }
         private void btnComprar_Click(object sender, EventArgs e)
         {
-            maleta.numeroMaletas = 0;
+            Datos.Equipaje.numeroMaletas = 0;
             if (cmbDestinos.SelectedIndex > -1)
             {
                 errorProvider1.Clear();
-                compra.destino = cmbDestinos.Text;
+                Datos.Boleto.destino = cmbDestinos.Text;
                 try
                 {
                     errorProvider2.Clear();
-                    compra.asientos = int.Parse(txtBoletos.Text);
+                    Datos.Boleto.asientos = int.Parse(txtBoletos.Text);
                     validarMaletas();
-                    calcularSubtotal(compra.asientos,maleta.numeroMaletas);
+                    calcularSubtotal(Datos.Boleto.asientos,Datos.Equipaje.numeroMaletas);
                     limpiarDatos();
-                    Form factura = new Form3(compra.asientos,compra.destino,maleta.numeroMaletas,maleta.valorTotal,compra.valor);
+                    Form factura = new Form3();
                     factura.Show();
                 }
                 catch (FormatException)
@@ -127,7 +114,7 @@ namespace projecto_s
             {
                 try
                 {
-                    maleta.numeroMaletas = int.Parse(txtCantidad.Text);
+                    Datos.Equipaje.numeroMaletas = int.Parse(txtCantidad.Text);
                 }
                 catch (FormatException)
                 {
@@ -147,29 +134,24 @@ namespace projecto_s
         {
             switch (cmbDestinos.SelectedIndex){
                 case 0:
-                     compra.valor = 9 * numero;
-                    maleta.valorTotal = 1 * maletas;
-                    compra.totalPagar = compra.valor + maleta.valorTotal;
+                    Datos.Boleto.valor = 9 * Datos.Boleto.asientos;
+                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;          
                     break;
                 case 1:
-                    compra.valor = 9 * numero;
-                    maleta.valorTotal = 1 * maletas;
-                    compra.totalPagar = compra.valor + maleta.valorTotal;
+                    Datos.Boleto.valor = 9 * Datos.Boleto.asientos;
+                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
                     break;
                 case 2:
-                    compra.valor = 9 * numero;
-                    maleta.valorTotal = 1 * maletas;
-                    compra.totalPagar = compra.valor + maleta.valorTotal;
+                    Datos.Boleto.valor = 9 * Datos.Boleto.asientos;
+                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
                     break;
                 case 3:
-                    compra.valor = 9 * numero;
-                    maleta.valorTotal = 1 * maletas;
-                    compra.totalPagar = compra.valor + maleta.valorTotal;
+                    Datos.Boleto.valor = 9 * Datos.Boleto.asientos;
+                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
                     break;
                 case 4:
-                    compra.valor = 9 * numero;
-                    maleta.valorTotal = 1 * maletas;
-                    compra.totalPagar = compra.valor + maleta.valorTotal;
+                    Datos.Boleto.valor = 9 * Datos.Boleto.asientos;
+                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
                     break;
             }
         }

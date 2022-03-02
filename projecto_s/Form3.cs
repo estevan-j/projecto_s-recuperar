@@ -12,50 +12,25 @@ namespace projecto_s
 {
     public partial class Form3 : Form
     {
-        public Form3(int boletos, string destino,int numeroMaletas,double valorMaletas, double valorTotal)
+        public Form3()
         {
             InitializeComponent();
             
-            this.boletos = boletos;
-            this.numeroMaletas = numeroMaletas;
-            this.valor = valorMaletas;
-            this.valorTotal = valorTotal;
-            this.destino = destino;
-
+         
         }
-        struct Persona
-        {
-            string nombre;
-            string apellido;
-            string ci;
-        }
-
-        Persona cliente;
-        
-        private int boletos;
-        private int numeroMaletas;
-        private double valor;
-        private double valorTotal;
-        private string destino;
-
-        double valorMaletas;
-        float iva;
-        int subtotal;
-        int total;
-
         
 
-
-
-
+        
+       
+   
             private void Form3_Load(object sender, EventArgs e)
         {
-            lblBoleto.Text=Convert.ToString(boletos);
-            if (numeroMaletas >0)
+            lblBoleto.Text=Convert.ToString(Datos.Boleto.asientos);
+            if (Datos.Equipaje.numeroMaletas > 0)
             {
-                lblMaleta.Text = Convert.ToString(numeroMaletas);
+                lblMaleta.Text = Convert.ToString(Datos.Equipaje.numeroMaletas);
             }
-            lblDestino.Text = destino;
+            lblDestino.Text = Datos.Boleto.destino;
 
            
         }

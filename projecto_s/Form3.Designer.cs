@@ -30,26 +30,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblApellido = new System.Windows.Forms.Label();
-            this.lblCedula = new System.Windows.Forms.Label();
-            this.lblRuta = new System.Windows.Forms.Label();
-            this.lblBoletos = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.lblMaletas = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblBoleto = new System.Windows.Forms.Label();
-            this.lblMaleta = new System.Windows.Forms.Label();
-            this.lblDestino = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblDestino = new System.Windows.Forms.Label();
+            this.lblMaleta = new System.Windows.Forms.Label();
+            this.lblBoleto = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblMaletas = new System.Windows.Forms.Label();
+            this.lblBoletos = new System.Windows.Forms.Label();
+            this.lblRuta = new System.Windows.Forms.Label();
+            this.lblCedula = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +63,6 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblMaletas);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.lblBoletos);
             this.panel1.Controls.Add(this.lblRuta);
             this.panel1.Controls.Add(this.lblCedula);
@@ -75,146 +73,6 @@
             this.panel1.Size = new System.Drawing.Size(560, 268);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(255, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "TRANS JEC ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(33, 13);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(54, 13);
-            this.lblNombre.TabIndex = 1;
-            this.lblNombre.Text = "Nombre:";
-            this.lblNombre.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // lblApellido
-            // 
-            this.lblApellido.AutoSize = true;
-            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.Location = new System.Drawing.Point(33, 37);
-            this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(56, 13);
-            this.lblApellido.TabIndex = 2;
-            this.lblApellido.Text = "Apellido:";
-            this.lblApellido.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // lblCedula
-            // 
-            this.lblCedula.AutoSize = true;
-            this.lblCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCedula.Location = new System.Drawing.Point(60, 62);
-            this.lblCedula.Name = "lblCedula";
-            this.lblCedula.Size = new System.Drawing.Size(27, 13);
-            this.lblCedula.TabIndex = 3;
-            this.lblCedula.Text = "C.I:";
-            // 
-            // lblRuta
-            // 
-            this.lblRuta.AutoSize = true;
-            this.lblRuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRuta.Location = new System.Drawing.Point(51, 84);
-            this.lblRuta.Name = "lblRuta";
-            this.lblRuta.Size = new System.Drawing.Size(38, 13);
-            this.lblRuta.TabIndex = 4;
-            this.lblRuta.Text = "Ruta:";
-            // 
-            // lblBoletos
-            // 
-            this.lblBoletos.AutoSize = true;
-            this.lblBoletos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBoletos.Location = new System.Drawing.Point(377, 13);
-            this.lblBoletos.Name = "lblBoletos";
-            this.lblBoletos.Size = new System.Drawing.Size(67, 13);
-            this.lblBoletos.TabIndex = 5;
-            this.lblBoletos.Text = "N°Boletos:";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(243, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "IMPRIMIR";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // lblMaletas
-            // 
-            this.lblMaletas.AutoSize = true;
-            this.lblMaletas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaletas.Location = new System.Drawing.Point(377, 37);
-            this.lblMaletas.Name = "lblMaletas";
-            this.lblMaletas.Size = new System.Drawing.Size(69, 13);
-            this.lblMaletas.TabIndex = 7;
-            this.lblMaletas.Text = "N°Maletas:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(10, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "-";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(95, 37);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(10, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "-";
-            this.label3.Click += new System.EventHandler(this.label3_Click_1);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(95, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(10, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "-";
-            // 
-            // lblBoleto
-            // 
-            this.lblBoleto.AutoSize = true;
-            this.lblBoleto.Location = new System.Drawing.Point(450, 13);
-            this.lblBoleto.Name = "lblBoleto";
-            this.lblBoleto.Size = new System.Drawing.Size(10, 13);
-            this.lblBoleto.TabIndex = 11;
-            this.lblBoleto.Text = "-";
-            // 
-            // lblMaleta
-            // 
-            this.lblMaleta.AutoSize = true;
-            this.lblMaleta.Location = new System.Drawing.Point(452, 37);
-            this.lblMaleta.Name = "lblMaleta";
-            this.lblMaleta.Size = new System.Drawing.Size(10, 13);
-            this.lblMaleta.TabIndex = 12;
-            this.lblMaleta.Text = "-";
-            // 
-            // lblDestino
-            // 
-            this.lblDestino.AutoSize = true;
-            this.lblDestino.Location = new System.Drawing.Point(95, 84);
-            this.lblDestino.Name = "lblDestino";
-            this.lblDestino.Size = new System.Drawing.Size(10, 13);
-            this.lblDestino.TabIndex = 13;
-            this.lblDestino.Text = "-";
             // 
             // dataGridView2
             // 
@@ -257,6 +115,135 @@
             this.Column10.HeaderText = "Total";
             this.Column10.Name = "Column10";
             // 
+            // lblDestino
+            // 
+            this.lblDestino.AutoSize = true;
+            this.lblDestino.Location = new System.Drawing.Point(95, 84);
+            this.lblDestino.Name = "lblDestino";
+            this.lblDestino.Size = new System.Drawing.Size(10, 13);
+            this.lblDestino.TabIndex = 13;
+            this.lblDestino.Text = "-";
+            // 
+            // lblMaleta
+            // 
+            this.lblMaleta.AutoSize = true;
+            this.lblMaleta.Location = new System.Drawing.Point(452, 37);
+            this.lblMaleta.Name = "lblMaleta";
+            this.lblMaleta.Size = new System.Drawing.Size(10, 13);
+            this.lblMaleta.TabIndex = 12;
+            this.lblMaleta.Text = "-";
+            // 
+            // lblBoleto
+            // 
+            this.lblBoleto.AutoSize = true;
+            this.lblBoleto.Location = new System.Drawing.Point(450, 13);
+            this.lblBoleto.Name = "lblBoleto";
+            this.lblBoleto.Size = new System.Drawing.Size(10, 13);
+            this.lblBoleto.TabIndex = 11;
+            this.lblBoleto.Text = "-";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(95, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(10, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "-";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(95, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(10, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "-";
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(93, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(10, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "-";
+            // 
+            // lblMaletas
+            // 
+            this.lblMaletas.AutoSize = true;
+            this.lblMaletas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaletas.Location = new System.Drawing.Point(377, 37);
+            this.lblMaletas.Name = "lblMaletas";
+            this.lblMaletas.Size = new System.Drawing.Size(69, 13);
+            this.lblMaletas.TabIndex = 7;
+            this.lblMaletas.Text = "N°Maletas:";
+            // 
+            // lblBoletos
+            // 
+            this.lblBoletos.AutoSize = true;
+            this.lblBoletos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBoletos.Location = new System.Drawing.Point(377, 13);
+            this.lblBoletos.Name = "lblBoletos";
+            this.lblBoletos.Size = new System.Drawing.Size(67, 13);
+            this.lblBoletos.TabIndex = 5;
+            this.lblBoletos.Text = "N°Boletos:";
+            // 
+            // lblRuta
+            // 
+            this.lblRuta.AutoSize = true;
+            this.lblRuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRuta.Location = new System.Drawing.Point(51, 84);
+            this.lblRuta.Name = "lblRuta";
+            this.lblRuta.Size = new System.Drawing.Size(38, 13);
+            this.lblRuta.TabIndex = 4;
+            this.lblRuta.Text = "Ruta:";
+            // 
+            // lblCedula
+            // 
+            this.lblCedula.AutoSize = true;
+            this.lblCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCedula.Location = new System.Drawing.Point(60, 62);
+            this.lblCedula.Name = "lblCedula";
+            this.lblCedula.Size = new System.Drawing.Size(27, 13);
+            this.lblCedula.TabIndex = 3;
+            this.lblCedula.Text = "C.I:";
+            // 
+            // lblApellido
+            // 
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.Location = new System.Drawing.Point(33, 37);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(56, 13);
+            this.lblApellido.TabIndex = 2;
+            this.lblApellido.Text = "Apellido:";
+            this.lblApellido.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(33, 13);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(54, 13);
+            this.lblNombre.TabIndex = 1;
+            this.lblNombre.Text = "Nombre:";
+            this.lblNombre.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(255, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 18);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "TRANS JEC ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,7 +268,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblBoletos;
         private System.Windows.Forms.Label lblRuta;
         private System.Windows.Forms.Label lblCedula;
