@@ -62,7 +62,7 @@
             this.lblApellido.ForeColor = System.Drawing.Color.Black;
             this.lblApellido.Location = new System.Drawing.Point(196, 145);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(66, 16);
+            this.lblApellido.Size = new System.Drawing.Size(65, 16);
             this.lblApellido.TabIndex = 8;
             this.lblApellido.Text = "Apellido";
             // 
@@ -74,7 +74,7 @@
             this.lblNombre.ForeColor = System.Drawing.Color.Black;
             this.lblNombre.Location = new System.Drawing.Point(196, 115);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(63, 16);
+            this.lblNombre.Size = new System.Drawing.Size(62, 16);
             this.lblNombre.TabIndex = 9;
             this.lblNombre.Text = "Nombre";
             // 
@@ -90,7 +90,7 @@
             // 
             this.btnContinuar.Location = new System.Drawing.Point(240, 228);
             this.btnContinuar.Name = "btnContinuar";
-            this.btnContinuar.Size = new System.Drawing.Size(104, 31);
+            this.btnContinuar.Size = new System.Drawing.Size(128, 31);
             this.btnContinuar.TabIndex = 26;
             this.btnContinuar.Text = "Continuar";
             this.btnContinuar.UseVisualStyleBackColor = true;
@@ -108,7 +108,7 @@
             this.lblCi.ForeColor = System.Drawing.Color.Black;
             this.lblCi.Location = new System.Drawing.Point(237, 178);
             this.lblCi.Name = "lblCi";
-            this.lblCi.Size = new System.Drawing.Size(22, 16);
+            this.lblCi.Size = new System.Drawing.Size(21, 16);
             this.lblCi.TabIndex = 30;
             this.lblCi.Text = "CI";
             // 
