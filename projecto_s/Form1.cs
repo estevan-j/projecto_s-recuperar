@@ -114,6 +114,7 @@ namespace projecto_s
             
             borrarDatos();
             Form eleccion = new Form2();
+            
             eleccion.Show();
             this.Close();
         }

@@ -221,11 +221,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(109, 9);
+            this.label2.Location = new System.Drawing.Point(117, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 16);
+            this.label2.Size = new System.Drawing.Size(137, 16);
             this.label2.TabIndex = 15;
             this.label2.Text = "Destinos y Presios";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 

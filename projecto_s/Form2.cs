@@ -81,6 +81,7 @@ namespace projecto_s
         }
         private void btnComprar_Click(object sender, EventArgs e)
         {
+            maleta.numeroMaletas = 0;
             if (cmbDestinos.SelectedIndex > -1)
             {
                 errorProvider1.Clear();
@@ -92,7 +93,7 @@ namespace projecto_s
                     validarMaletas();
                     calcularSubtotal(compra.asientos,maleta.numeroMaletas);
                     limpiarDatos();
-                    Form factura = new Form3();
+                    Form factura = new Form3(compra.asientos,compra.destino,maleta.numeroMaletas,maleta.valorTotal,compra.valor);
                     factura.Show();
                 }
                 catch (FormatException)
@@ -179,6 +180,11 @@ namespace projecto_s
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
