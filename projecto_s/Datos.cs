@@ -15,7 +15,7 @@ namespace projecto_s
             static public string nombre;
             static public string cedula;
         }
-       
+     
         public struct Equipaje
         {
             static public int numeroMaletas;
@@ -26,6 +26,7 @@ namespace projecto_s
             static public int asientos;
             static public double valor;
             static public double totalPagar;
+            static public string hora;
             static public string destino;
         }
     }

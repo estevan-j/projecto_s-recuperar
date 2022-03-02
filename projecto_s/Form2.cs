@@ -28,10 +28,10 @@ namespace projecto_s
             lugares[0].precio = 9;
             lugares[0].horario = "13:00";
             lugares[1].lugarDeDestino = "Cuenca";
-            lugares[1].precio = 15;
+            lugares[1].precio = 14.6;
             lugares[1].horario = "15:00";
             lugares[2].lugarDeDestino = "Napo";
-            lugares[2].precio = 10;
+            lugares[2].precio = 10.3;
             lugares[2].horario = "12:00";
             lugares[3].lugarDeDestino = "Loja";
             lugares[3].precio = 18;
@@ -82,12 +82,13 @@ namespace projecto_s
                     limpiarDatos();
                     Form factura = new Form3();
                     factura.Show();
+                    this.Close();
                 }
                 catch (FormatException)
                 {
                     if (txtBoletos.Text == "")
                     {
-                        errorProvider2.SetError(txtBoletos, "*Ingresa el número de boletos");
+                        errorProvider2.SetError(txtBoletos, "Ingresa el número de boletos");
                     }
                     else
                     {
@@ -97,7 +98,7 @@ namespace projecto_s
             }
             else
             {
-                errorProvider1.SetError(cmbDestinos, "*Selecciona un lugar");
+                errorProvider1.SetError(cmbDestinos, "Selecciona un lugar");
             }
         }
 
@@ -105,7 +106,7 @@ namespace projecto_s
         {
             txtBoletos.Text = null;
             txtCantidad.Text = null;
-           
+            cmbDestinos.SelectedIndex = -1;
         }
        
         public void validarMaletas()
@@ -120,7 +121,7 @@ namespace projecto_s
                 {
                     if (txtCantidad.Text == "")
                     {
-                        errorProvider3.SetError(txtCantidad, "*Ingresa el número ");
+                        errorProvider3.SetError(txtCantidad, "Ingresa el número de maletas");
                     }
                     else
                     {
@@ -135,23 +136,28 @@ namespace projecto_s
             switch (cmbDestinos.SelectedIndex){
                 case 0:
                     Datos.Boleto.valor = 9 * Datos.Boleto.asientos;
-                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;          
+                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
+                    Datos.Boleto.hora = lugares[0].horario;
                     break;
                 case 1:
-                    Datos.Boleto.valor = 9 * Datos.Boleto.asientos;
+                    Datos.Boleto.valor = 14.6 * Datos.Boleto.asientos;
                     Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
+                    Datos.Boleto.hora = lugares[1].horario;
                     break;
                 case 2:
-                    Datos.Boleto.valor = 9 * Datos.Boleto.asientos;
+                    Datos.Boleto.valor = 10.3 * Datos.Boleto.asientos;
                     Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
+                    Datos.Boleto.hora = lugares[2].horario;
                     break;
                 case 3:
-                    Datos.Boleto.valor = 9 * Datos.Boleto.asientos;
+                    Datos.Boleto.valor = 18 * Datos.Boleto.asientos;
                     Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
+                    Datos.Boleto.hora = lugares[3].horario;
                     break;
                 case 4:
-                    Datos.Boleto.valor = 9 * Datos.Boleto.asientos;
+                    Datos.Boleto.valor = 7.5 * Datos.Boleto.asientos;
                     Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
+                    Datos.Boleto.hora = lugares[4].horario;
                     break;
             }
         }
@@ -167,6 +173,11 @@ namespace projecto_s
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }

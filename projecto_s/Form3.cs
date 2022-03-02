@@ -18,10 +18,8 @@ namespace projecto_s
             
          
         }
-        
-
-        
-       
+        double subtotal;
+        double valorExtra;
    
             private void Form3_Load(object sender, EventArgs e)
         {
@@ -30,8 +28,17 @@ namespace projecto_s
             {
                 lblMaleta.Text = Convert.ToString(Datos.Equipaje.numeroMaletas);
             }
+            subtotal = Datos.Boleto.valor + Datos.Equipaje.valorTotal;
+            valorExtra = subtotal * 0.12;
+            Datos.Boleto.totalPagar = valorExtra + subtotal;
             lblDestino.Text = Datos.Boleto.destino;
-
+            lblDatoN.Text = Datos.Persona.nombre;
+            lblDatoA.Text = Datos.Persona.apellido;
+            lblDatoCi.Text = Datos.Persona.cedula;
+            lblDestino.Text = Datos.Boleto.destino;
+            dtgTabla.Rows.Add(Convert.ToString(Datos.Boleto.asientos), Convert.ToString(Datos.Boleto.valor), 
+                Convert.ToString(subtotal),Convert.ToString(valorExtra), Convert.ToString(Datos.Boleto.totalPagar));
+            lblHoras.Text = Datos.Boleto.hora;
            
         }
 

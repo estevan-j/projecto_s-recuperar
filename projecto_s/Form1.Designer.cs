@@ -90,7 +90,7 @@
             // 
             this.btnContinuar.Location = new System.Drawing.Point(240, 228);
             this.btnContinuar.Name = "btnContinuar";
-            this.btnContinuar.Size = new System.Drawing.Size(128, 31);
+            this.btnContinuar.Size = new System.Drawing.Size(120, 30);
             this.btnContinuar.TabIndex = 26;
             this.btnContinuar.Text = "Continuar";
             this.btnContinuar.UseVisualStyleBackColor = true;

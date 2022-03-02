@@ -104,9 +104,9 @@ namespace projecto_s
 
         private void btnContinuar_Click(object sender, EventArgs e)
         {
-            if ((txtNombre.Text == null) || (txtCedula.Text == null) || txtApellido.Text == null)
+            if ((txtNombre.Text == "") || (txtCedula.Text == "") || txtApellido.Text == "")
             {
-                
+                MessageBox.Show("Ingrese todos los datos solicitados","Error Datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
