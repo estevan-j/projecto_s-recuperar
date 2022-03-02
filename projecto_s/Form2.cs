@@ -77,12 +77,15 @@ namespace projecto_s
                 {
                     errorProvider2.Clear();
                     Datos.Boleto.asientos = int.Parse(txtBoletos.Text);
-                    validarMaletas();
-                    calcularSubtotal(Datos.Boleto.asientos,Datos.Equipaje.numeroMaletas);
-                    limpiarDatos();
-                    Form factura = new Form3();
-                    factura.Show();
-                    this.Close();
+                    if (validarMaletas())
+                    {
+                        calcularSubtotal(Datos.Boleto.asientos, Datos.Equipaje.numeroMaletas);
+                        limpiarDatos();
+                        Form factura = new Form3();
+                        factura.Show();
+                        this.Close();
+                    }
+                    
                 }
                 catch (FormatException)
                 {
@@ -109,13 +112,15 @@ namespace projecto_s
             cmbDestinos.SelectedIndex = -1;
         }
        
-        public void validarMaletas()
+        public bool validarMaletas()
         {
+            bool opcion = true;
             if (rbtSi.Checked)
             {
                 try
                 {
                     Datos.Equipaje.numeroMaletas = int.Parse(txtCantidad.Text);
+                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
                 }
                 catch (FormatException)
                 {
@@ -128,35 +133,32 @@ namespace projecto_s
                         errorProvider3.Clear();
                         MessageBox.Show("Ingresa valores numéricos","Error Maletas",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     }
+                    opcion = false;
                 }
             }
+            return opcion;
         }
         public void calcularSubtotal(int numero, int maletas)
         {
             switch (cmbDestinos.SelectedIndex){
                 case 0:
                     Datos.Boleto.valor = 9 * Datos.Boleto.asientos;
-                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
                     Datos.Boleto.hora = lugares[0].horario;
                     break;
                 case 1:
                     Datos.Boleto.valor = 14.6 * Datos.Boleto.asientos;
-                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
                     Datos.Boleto.hora = lugares[1].horario;
                     break;
                 case 2:
                     Datos.Boleto.valor = 10.3 * Datos.Boleto.asientos;
-                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
                     Datos.Boleto.hora = lugares[2].horario;
                     break;
                 case 3:
                     Datos.Boleto.valor = 18 * Datos.Boleto.asientos;
-                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
                     Datos.Boleto.hora = lugares[3].horario;
                     break;
                 case 4:
                     Datos.Boleto.valor = 7.5 * Datos.Boleto.asientos;
-                    Datos.Equipaje.valorTotal = 1 * Datos.Equipaje.numeroMaletas;
                     Datos.Boleto.hora = lugares[4].horario;
                     break;
             }

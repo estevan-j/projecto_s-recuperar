@@ -39,7 +39,6 @@ namespace projecto_s
             dtgTabla.Rows.Add(Convert.ToString(Datos.Boleto.asientos), Convert.ToString(Datos.Boleto.valor), 
                 Convert.ToString(subtotal),Convert.ToString(valorExtra), Convert.ToString(Datos.Boleto.totalPagar));
             lblHoras.Text = Datos.Boleto.hora;
-           
         }
 
 
@@ -64,6 +63,11 @@ namespace projecto_s
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
