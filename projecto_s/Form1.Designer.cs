@@ -106,11 +106,11 @@
             this.lblCi.BackColor = System.Drawing.Color.White;
             this.lblCi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCi.ForeColor = System.Drawing.Color.Black;
-            this.lblCi.Location = new System.Drawing.Point(237, 178);
+            this.lblCi.Location = new System.Drawing.Point(202, 179);
             this.lblCi.Name = "lblCi";
-            this.lblCi.Size = new System.Drawing.Size(21, 16);
+            this.lblCi.Size = new System.Drawing.Size(56, 16);
             this.lblCi.TabIndex = 30;
-            this.lblCi.Text = "CI";
+            this.lblCi.Text = "Cédula";
             // 
             // txtNombre
             // 

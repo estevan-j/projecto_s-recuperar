@@ -112,7 +112,7 @@
             // lblDatoCi
             // 
             this.lblDatoCi.AutoSize = true;
-            this.lblDatoCi.Location = new System.Drawing.Point(132, 93);
+            this.lblDatoCi.Location = new System.Drawing.Point(130, 93);
             this.lblDatoCi.Name = "lblDatoCi";
             this.lblDatoCi.Size = new System.Drawing.Size(10, 13);
             this.lblDatoCi.TabIndex = 10;
@@ -121,7 +121,7 @@
             // lblDatoA
             // 
             this.lblDatoA.AutoSize = true;
-            this.lblDatoA.Location = new System.Drawing.Point(132, 68);
+            this.lblDatoA.Location = new System.Drawing.Point(130, 68);
             this.lblDatoA.Name = "lblDatoA";
             this.lblDatoA.Size = new System.Drawing.Size(10, 13);
             this.lblDatoA.TabIndex = 9;
@@ -171,11 +171,11 @@
             // 
             this.lblCedula.AutoSize = true;
             this.lblCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCedula.Location = new System.Drawing.Point(97, 93);
+            this.lblCedula.Location = new System.Drawing.Point(76, 93);
             this.lblCedula.Name = "lblCedula";
-            this.lblCedula.Size = new System.Drawing.Size(27, 13);
+            this.lblCedula.Size = new System.Drawing.Size(50, 13);
             this.lblCedula.TabIndex = 3;
-            this.lblCedula.Text = "C.I:";
+            this.lblCedula.Text = "Cédula:";
             // 
             // lblApellido
             // 
