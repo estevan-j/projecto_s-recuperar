@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static projecto_s.Form1;
+
 
 namespace projecto_s
 {
@@ -15,11 +17,14 @@ namespace projecto_s
         public Form3()
         {
             InitializeComponent();
+           
         }
-
+        
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            lblNom.Text= DATOS.nombre;
+            lBLAPELL.Text = DATOS.Persona.apellido;
+            
         }
     }
 }

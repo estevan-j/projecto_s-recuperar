@@ -17,15 +17,7 @@ namespace projecto_s
         {
             InitializeComponent();
         }
-        struct Persona
-        {
-            string nombre;
-            string apellido;
-            string ci;
-        }
-
-        Persona cliente;
-
+       
         private void controlNombre()
         {
             if (txtNombre.Text.Trim() != string.Empty && txtNombre.Text.All(char.IsLetter))
@@ -111,9 +103,10 @@ namespace projecto_s
 
         private void btnContinuar_Click(object sender, EventArgs e)
         {
-            
+            controlNombre();
             borrarDatos();
-            Form eleccion = new Form2();
+            Form2 eleccion = new Form2();
+           
             eleccion.Show();
             this.Close();
         }

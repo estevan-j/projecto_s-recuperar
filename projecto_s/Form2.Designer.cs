@@ -199,6 +199,7 @@
             // 
             // errorProvider3
             // 
+            this.errorProvider3.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.errorProvider3.ContainerControl = this;
             // 
             // errorProvider1
@@ -223,7 +224,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(109, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 16);
+            this.label2.Size = new System.Drawing.Size(137, 16);
             this.label2.TabIndex = 15;
             this.label2.Text = "Destinos y Presios";
             // 
@@ -263,6 +264,7 @@
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TRANS JEC - BOLETERÍA";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

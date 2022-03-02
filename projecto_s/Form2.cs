@@ -36,6 +36,7 @@ namespace projecto_s
         public Form2()
         {
             InitializeComponent();
+
             cmbDestinos.DropDownStyle = ComboBoxStyle.DropDownList;
             lugares[0].lugarDeDestino = "Guayaquil";
             lugares[0].precio = 9;
@@ -85,6 +86,7 @@ namespace projecto_s
             {
                 errorProvider1.Clear();
                 compra.destino = cmbDestinos.Text;
+                
                 try
                 {
                     errorProvider2.Clear();
@@ -92,7 +94,7 @@ namespace projecto_s
                     validarMaletas();
                     calcularSubtotal(compra.asientos,maleta.numeroMaletas);
                     limpiarDatos();
-                    Form factura = new Form3();
+                    Form3 factura = new Form3();
                     factura.Show();
                 }
                 catch (FormatException)
@@ -117,11 +119,12 @@ namespace projecto_s
         {
             txtBoletos.Text = null;
             txtCantidad.Text = null;
-           
+            cmbDestinos.SelectedIndex = -1;
         }
        
         public void validarMaletas()
         {
+            maleta.numeroMaletas = 0;
             if (rbtSi.Checked)
             {
                 try
@@ -151,22 +154,22 @@ namespace projecto_s
                     compra.totalPagar = compra.valor + maleta.valorTotal;
                     break;
                 case 1:
-                    compra.valor = 9 * numero;
+                    compra.valor = 15 * numero;
                     maleta.valorTotal = 1 * maletas;
                     compra.totalPagar = compra.valor + maleta.valorTotal;
                     break;
                 case 2:
-                    compra.valor = 9 * numero;
+                    compra.valor = 10 * numero;
                     maleta.valorTotal = 1 * maletas;
                     compra.totalPagar = compra.valor + maleta.valorTotal;
                     break;
                 case 3:
-                    compra.valor = 9 * numero;
+                    compra.valor = 18 * numero;
                     maleta.valorTotal = 1 * maletas;
                     compra.totalPagar = compra.valor + maleta.valorTotal;
                     break;
                 case 4:
-                    compra.valor = 9 * numero;
+                    compra.valor = 7.5 * numero;
                     maleta.valorTotal = 1 * maletas;
                     compra.totalPagar = compra.valor + maleta.valorTotal;
                     break;
@@ -179,6 +182,11 @@ namespace projecto_s
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }
